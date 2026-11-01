@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal 2 - Function</title>
+</head>
+<body>
+
+    <h2>Cek Genap & Ganjil</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya ya.</p>
+
+    <script>
+        // Function untuk mengecek apakah sebuah bilangan genap atau ganjil
+        function cekBilangan(angka) {
+            if (angka % 2 === 0) {
+                console.log(angka + " adalah bilangan genap.");
+            } else {
+                console.log(angka + " adalah bilangan ganjil.");
+            }
+        }
+
+        // Memanggil function
+        cekBilangan(4); // Output: 4 adalah bilangan genap.
+        cekBilangan(7); // Output: 7 adalah bilangan ganjil.
+    </script>
+
+</body>
+</html>

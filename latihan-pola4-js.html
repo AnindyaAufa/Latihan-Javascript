@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal 4 - Pola</title>
+</head>
+<body>
+
+    <h2>Segitiga Sama Sisi</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya ya.</p>
+
+    <script>
+        // Function untuk menampilkan pola segitiga sama sisi
+        function CetakPolaSegitigaSamaSisi(n) {
+            let tinggi = 4; // jumlah tingkatan segitiga
+            let hasil = "";
+            for (let i = 1; i <= tinggi; i++) {
+                // 1. buat spasi di kiri agar seimbang di tengah
+                let Spasi= " ".repeat(tinggi - i);
+                // 2. buat deretan angaka untuk baris ini
+                let angka = "";
+                for (let j = 1; j <= (2 * i - 1); j++) {
+                    angka += i; // Mengunakan angka i untuk setiap baris
+                }
+                hasil += Spasi + angka + "\n";
+            }
+            // 3. Gabungkan spasi dan angka, lalu pindah baris
+            console.log(hasil);
+        }
+
+        // Memanggil function
+        CetakPolaSegitigaSamaSisi(4 ); // Output: 
+                       //     1
+                       //    2 2
+                       //   3 3 3
+                       //  4 4 4 4
+                       // 5 5 5 5 5
+        </script>
+
+</body>
+</html>

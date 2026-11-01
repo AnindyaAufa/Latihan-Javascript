@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal 7 - Pola</title>
+</head>
+<body>
+
+    <h2>Segitiga Jam Pasir</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya ya.</p>
+
+    <script>
+        // Function untuk menampilkan pola segitiga Jam Pasir
+        function CetakPolaSegitigaJamPasir() {
+            let totalBaris = 7;
+            let n = Math.ceil(totalBaris / 2);
+            let hasil = "";
+            // 1. MEMBUAT SEGITIGA BAGIAN ATAS (Baris 1 sampai 4)
+            for (let i = n; i >= 1; i--) {
+                let Spasi = " ".repeat(n - i);
+                let Bintang = "*".repeat(2 * i - 1);
+                hasil += Spasi + Bintang + "\n";
+            }
+            // 2. MEMBUAT SEGITIGA BAGIAN BAWAH (Baris 5 sampai 7)
+            for (let i = 2; i <= n; i++) {
+                let Spasi = " ".repeat(n - i);
+                let Bintang = "*".repeat(2 * i - 1);
+                hasil += Spasi + Bintang + "\n";
+            }
+            console.log(hasil);
+        }
+        console.log(CetakPolaSegitigaJamPasir()); // Output: 
+                       // *******
+                       //  *****
+                       //   ***
+                       //    *
+                       //   ***
+                       //  *****
+                       // *******
+    </script>
+</body>
+</html>

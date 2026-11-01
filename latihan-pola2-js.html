@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal 2 - Pola</title>
+</head>
+<body>
+
+    <h2>Pola Persegi Panjang</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya ya.</p>
+
+    <script>
+        // Function untuk menampilkan pola persegi panjang
+        function CetakPola(n, m) {
+            let tinggi = 4; // jumlah baris (ke bawah)
+            let lebar = 8; // jumlah kolom (ke samping)
+            let hasil = "";
+            for (let i = 0; i < tinggi; i++) {
+                hasil += "*".repeat(lebar) + "\n";
+            }
+            // Cetak seluruh wadah sekaligus setelah loop benar-benar selesai
+            console.log(hasil);
+        }
+
+        // Memanggil function
+        CetakPola(5, 10); // Output: 
+                       // ********
+                       // ********
+                       // ********
+                       // ********
+    </script>
+
+</body>
+</html>

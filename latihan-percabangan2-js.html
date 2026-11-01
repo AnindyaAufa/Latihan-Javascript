@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal 2 - Percabangan</title>
+</head>
+<body>
+
+    <h2>Program Konversi Peran (Role)</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya ya.</p>
+
+    <script>
+        function cariRole(kodeRole) {
+            switch (kodeRole) {
+                case "A":
+                    console.log("Kode '" + kodeRole + "' adalah admin.");
+                    break;
+                case "U":
+                    console.log("Kode '" + kodeRole + "' adalah user.");
+                    break;
+                default:
+                    console.log("Kode peran '" + kodeRole + "' adalah tidak valid.");
+            }
+        }
+
+        cariRole("A");
+        cariRole("U");
+        cariRole("PQR");
+    </script>
+
+</body>
+</html>

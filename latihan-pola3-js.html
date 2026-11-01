@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal 3 - Pola</title>
+</head>
+<body>
+
+    <h2>Persegi Panjang Kosong</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya ya.</p>
+
+    <script>
+        // Function untuk menampilkan pola persegi panjang kosong
+        function CetakPolaPersegiPanjangkosong(n, m) {
+            let tinggi = 5; // jumlah baris ke bawah
+            let lebar = 10; // jumlah kolom ke samping
+            let hasil = "";
+            for (let i = 0; i < tinggi; i++) {
+                for (let j = 0; j < lebar; j++) {
+                    if (i === 0 || i === tinggi - 1 || j === 0 || j === lebar - 1) {
+                        hasil += "*";
+                    } else {
+                        hasil += " "; // Cetak spasi untuk bagian dalam yang kosong
+                    }
+                }
+                hasil += "\n"; // Tambahkan baris baru setelah setiap baris selesai
+            }
+            console.log(hasil);
+        }
+
+        // Memanggil function
+        CetakPolaPersegiPanjangkosong(5, 10); // Output: 
+                       // **********
+                       // *        *
+                       // *        *
+                       // *        *
+                       // **********
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal 6 - Pola</title>
+</head>
+<body>
+
+    <h2>Belah Ketupat</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya ya.</p>
+
+    <script>
+        // Function untuk menampilkan pola belah ketupat
+        function CetakPolaBelahKetupat() {
+            let totalBaris = 7; // jumlah tingkatan segitiga
+            let n = Math.ceil(totalBaris / 2); // jumlah baris untuk setengah segitiga
+            let hasil = "";
+          // 1. MEMBUAT SEGITIGA BAGIAN ATAS (Baris 1 sampai 4)
+            for (let i = 1; i <= n; i++) {
+                let Spasi= " ".repeat(n - i);
+                let Bintang = "*".repeat(2 * i - 1);
+                hasil += Spasi + Bintang + "\n";
+            }
+            // 2. MEMBUAT SEGITIGA BAGIAN BAWAH (baris 5 sampai 7)
+            for (let i = n - 1; i >= 1; i--) {
+                let Spasi= " ".repeat(n - i);
+                let Bintang = "*".repeat(2 * i - 1);
+                hasil += Spasi + Bintang + "\n";
+            }
+            return hasil;
+        }
+            console.log(CetakPolaBelahKetupat()); // Output: 
+                       //     *
+                       //    ***
+                       //   *****
+                       //  *******
+                       //   *****
+                       //    ***
+                       //     *
+        </script>
+
+</body>
+</html>

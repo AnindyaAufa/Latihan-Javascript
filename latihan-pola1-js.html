@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal 4 - Function</title>
+</head>
+<body>
+
+    <h2>Pola Segitiga</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya ya.</p>
+
+    <script>
+        // Function untuk mencetak pola segitiga
+        function cetakPola(baris) {
+            for (let i = 1; i <= baris; i++) {
+                let bintang = "";
+                for (let j = 1; j <= i; j++) {
+                    bintang += "*";
+                }
+                console.log(bintang);
+            }
+        }
+
+        // Memanggil function
+        cetakPola(5); // Output: 
+                       // *
+                       // **
+                       // ***
+                       // ****
+    </script>
+
+</body>
+</html>

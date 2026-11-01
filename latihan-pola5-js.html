@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal 5 - Pola</title>
+</head>
+<body>
+
+    <h2>Segitiga Sama Sisi 2</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya ya.</p>
+
+    <script>
+        // Function untuk menampilkan pola segitiga sama sisi 2
+        function CetakPolaSegitigaSamaSisi2(n) {
+            let tinggi = 4; // jumlah tingkatan segitiga
+            let hasil = "";
+            let nomor = 1; // Nomor awal untuk dicetak
+            for (let i = 1; i <= tinggi; i++) {
+                // 1. buat spasi di kiri agar seimbang di tengah
+                let Spasi= " ".repeat(tinggi - i);
+                // 2. buat deretan angka untuk baris ini
+                let barisAngka = "";
+                for (let j = 1; j <= i; j++) {
+                        barisAngka += nomor;
+                        nomor++; // Increment nomor untuk angka berikutnya
+                    }
+                hasil += Spasi + barisAngka + "\n";
+            }
+            // 3. Gabungkan spasi dan angka, lalu pindah baris
+            console.log(hasil);
+        }
+
+        // Memanggil function
+        CetakPolaSegitigaSamaSisi2(5); // Output: 
+                       //     1 
+                       //    2 3 
+                       //   4 5 6 
+                       //  7 8 9 10  
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal 8 - Pola</title>
+</head>
+<body>
+
+    <h2>Segitiga Kosong</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya ya.</p>
+
+    <script>
+        // Function untuk menampilkan pola segitiga kosong
+        function CetakPolaSegitigaKosong() {
+            let tinggi = 5;
+            let hasil = "";
+            for (let i = 1; i <= tinggi; i++) {
+                // 1. Buat spasi di kiri agar membentuk segitiga sama sisi
+                let spasi = " ".repeat(tinggi - i);
+                hasil += spasi;
+                // 2. Buat logika untuk mencetak bintang atau spasi kosong di dalam
+                let jumlahKarakter = 2 * i - 1; // Jumlah karakter di setiap baris
+                for (let j = 1; j <= jumlahKarakter; j++) {
+                    if (i === tinggi || j === 1 || j === jumlahKarakter) {
+                        hasil += "*";
+                    } else {
+                        hasil += "  ";
+                    }
+                }
+                hasil += "\n";
+            }
+            console.log(hasil);
+        }
+        CetakPolaSegitigaKosong(); // Output: 
+                       //     *
+                       //    * *
+                       //   *   *
+                       //  *     *
+                       // *********
+    </script>
+
+</body>
+</html>
